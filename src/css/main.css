@@ -1,0 +1,14 @@
+.main-m * {
+  -outline: 1px solid #f00;
+}
+
+.main-m {
+  height: calc(100vh - 100px);
+}
+
+.main-m .m_contents .itm {
+  flex: 0 0 60%;
+}
+.main-m .m_contents .itm-r {
+  width: 40%;
+}

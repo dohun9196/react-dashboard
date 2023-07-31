@@ -1,0 +1,120 @@
+* {
+  -outline: 1px solid #f00;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 270px;
+  height: 100%;
+  background-color: var(--main-color);
+}
+
+.header .logo {
+  height: 100px;
+  color: var(--white1-color);
+  border-bottom: 1px solid var(--box-color);
+}
+
+.header .hd-fl {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 100px);
+}
+
+/* nav */
+.header .na-tit {
+  display: flex;
+  justify-content: space-between;
+}
+.header .na-tit-fl {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header .gnb a.active {
+  color: var(--green2-color);
+}
+
+.header .gnb {
+  color: var(--white2-color);
+}
+
+.header .gnb svg {
+  margin: 0 10px 0 0;
+  height: 30px;
+
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+.header .gnb > ul > li {
+  margin: 0 0 30px 0;
+}
+
+.header .gnb > ul > li > a {
+  display: flex;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 0 30px 0;
+}
+
+.header .gnb > ul > li > a > span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header .gnb .arr svg {
+  margin: 0;
+}
+
+.header .gnb .drop_menu > li {
+  margin: 0 0 15px 0;
+}
+
+.header .gnb .drop_menu > li > a {
+  display: block;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 0 0 10px 0;
+}
+.header .gnb .drop_menu > li > a > span {
+  display: block;
+}
+
+/* logout */
+.header .log-info {
+  padding-bottom: 50px;
+}
+.header .log-info button {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+
+  order: 1;
+
+  width: 100%;
+  line-height: 40px;
+  border: 1px solid var(--white2-color);
+  color: var(--white1-color);
+
+  transition: 0.4s;
+}
+
+.header .log-info button:hover {
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3) inset,
+    0px -3px 8px 0px rgba(0, 0, 0, 0.3) inset;
+  border: 1px solid var(--green2-color);
+  background-color: var(--green2-color);
+}
+
+.header .log-info button > span {
+  display: block;
+}

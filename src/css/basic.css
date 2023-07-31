@@ -1,0 +1,108 @@
+/* color */
+:root {
+  --main-color: #373a3e;
+  --box-color: rgba(36, 40, 46, 0.7);
+  --box-title-color: rgba(36, 40, 46, 0.9);
+
+  --white1-color: #ffffff;
+  --white2-color: #dcdcdc;
+
+  --blue-color: #9eaaff;
+
+  --green1-color: #9ddc08;
+  --green2-color: #8cb414;
+
+  --orange-color: #dca108;
+
+  --red-color: #e24523;
+
+  --chart-green: #649202;
+
+  --forest-green: #3c8500;
+}
+/* border-radius */
+.br8 {
+  border-radius: 8px;
+}
+
+.br15 {
+  border-radius: 15px;
+}
+
+.br15-t {
+  border-radius: 15px 15px 0 0;
+}
+
+/* shadow */
+.hd-sd,
+.ma-sd {
+  box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.5) inset;
+}
+.tit-sd {
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+.box-sd {
+  box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.5);
+}
+.progress-sd {
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3) inset,
+    0px -3px 8px 0px rgba(0, 0, 0, 0.3) inset;
+}
+
+/* padding */
+.pd10 {
+  padding: 10px;
+}
+
+.pd20 {
+  padding: 20px;
+}
+
+.pd30 {
+  padding: 30px;
+}
+
+.pd40 {
+  padding: 40px;
+}
+
+.pd50 {
+  padding: 50px;
+}
+
+/* margin */
+.ma-b20 {
+  margin-bottom: 20px;
+}
+
+/* main */
+.mtr30 {
+  padding: 30px 30px 0 30px;
+}
+
+.con-flex {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.con-itm {
+  background-color: var(--box-color);
+}
+
+.con-tit {
+  background-color: var(--box-title-color);
+  color: var(--white1-color);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.container {
+  min-width: 1920px;
+  width: calc(100vw - 270px);
+  height: 100vh;
+
+  margin: 0 0 0 270px;
+  background-color: var(--main-color);
+}
