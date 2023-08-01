@@ -13,9 +13,7 @@ const Banner = styled.div`
 `;
 
 const TBtit = styled.div`
-  flex: 0 0 80%;
   padding-left: 30px;
-
   span {
     display: block;
     font-size: 15px;

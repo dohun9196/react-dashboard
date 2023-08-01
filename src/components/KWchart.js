@@ -3,12 +3,20 @@ import axios from "axios";
 
 const KWchart = () => {
   const [chartData, setChartData] = useState([]);
+  const deviceList = "1,2,3";
+  const startDate = "2023-06-16 00:00:00";
+  const endDate = "2023-06-19 00:00:00";
+  const filter = "H";
+
+  const baseUrl = "http://192.168.100.30:8090/api/ems/pub/com/2008/kw";
+  const encodedStartDate = encodeURIComponent(startDate);
+  const encodedEndDate = encodeURIComponent(endDate);
+
+  const url = `${baseUrl}?device_list=${deviceList}&start_date=${encodedStartDate}&end_date=${encodedEndDate}&filter=${filter}`;
 
   const fetchData = () => {
     axios
-      .get(
-        "http://192.168.100.30:8090/api/ems/pub/com/2008/kw?device_list=1,2,3&start_date=2023-06-16%2000:00:00&end_date=2023-06-19%2000:00:00&filter=H"
-      )
+      .get(url)
       .then((response) => {
         console.log("API 호출 성공:", response.data);
 

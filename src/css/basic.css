@@ -99,7 +99,6 @@
 }
 
 .container {
-  min-width: 1920px;
   width: calc(100vw - 270px);
   height: 100vh;
 
